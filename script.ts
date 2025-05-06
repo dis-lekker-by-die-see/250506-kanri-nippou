@@ -1109,7 +1109,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const minutes: string = now.getMinutes().toString().padStart(2, "0");
     const seconds: string = now.getSeconds().toString().padStart(2, "0");
     const timestamp: string = `${year}${month}${day}_${hours}${minutes}${seconds}`;
-    const jsonFilename: string = `form_data_${timestamp}.json`;
+    // const jsonFilename: string = `form_data_${timestamp}.json`;
+    const jsonFilename: string = `${formData.tables.table1.資料No}_${timestamp}.json`;
 
     // Download JSON
     const jsonUrl: string = window.URL.createObjectURL(jsonBlob);
@@ -1559,7 +1560,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Download PDF
-    const pdfFilename: string = `form_data_${timestamp}.pdf`;
+    const pdfFilename: string = `${formData.tables.table1.資料No}_${timestamp}.pdf`;
     doc.save(pdfFilename);
   });
 });
