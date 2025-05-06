@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 600px;
+  margin: 20px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.date-box {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.date-box input {
+  width: 80px;
+  margin-left: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+  background-color: #ffe6e6; /* Very light pink for all input boxes */
+}
+
+input[value]:not([value=""]) {
+  background-color: #e6ffe6; /* Very light green for non-blank input boxes */
+}
+
+.weight-row td {
+  font-weight: bold;
+}
+
+.narrow-cell {
+  width: 60px;
+}
+
+.output-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.download-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.download-button button:hover {
+  background-color: #45a049;
+}

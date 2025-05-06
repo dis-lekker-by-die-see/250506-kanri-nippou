@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Japanese Form Replica</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-32x32.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div>管理日報</div>
+        <div class="date-box">
+          <div>
+            製造日 <input type="text" class="date-input" />年
+            <input type="text" class="date-input" />月
+            <input type="text" class="date-input" />日
+          </div>
+          <div>
+            包装日 <input type="text" class="date-input" />年
+            <input type="text" class="date-input" />月
+            <input type="text" class="date-input" />日
+          </div>
+        </div>
+      </div>
+
+      <table>
+        <tr>
+          <th>資料No.</th>
+          <td><input type="text" class="form-input" value="包装5" /></td>
+          <th>製品名</th>
+          <td colspan="2">
+            <input
+              type="text"
+              class="form-input"
+              value="HOなめらかクリームコロッケ・カニ入"
+            />
+          </td>
+          <th class="narrow-cell">承認</th>
+          <th class="narrow-cell">照査</th>
+          <th class="narrow-cell">作成</th>
+        </tr>
+        <tr>
+          <th>製品コード</th>
+          <td><input type="text" class="form-input" value="59-604" /></td>
+          <th>製品規格</th>
+          <td colspan="2">
+            <input
+              type="text"
+              class="form-input"
+              value="70 g － 8 個 － 10 P － 2 合"
+            />
+          </td>
+          <td class="narrow-cell"><input type="text" class="form-input" /></td>
+          <td class="narrow-cell"><input type="text" class="form-input" /></td>
+          <td class="narrow-cell"><input type="text" class="form-input" /></td>
+        </tr>
+      </table>
+
+      <table class="weight-row">
+        <tr>
+          <th>設定重量</th>
+          <td colspan="2">
+            <input
+              type="text"
+              class="form-input"
+              value="5.92 kg（風袋 0.32 kg）"
+            />
+          </td>
+          <th class="narrow-cell">承認</th>
+          <th class="narrow-cell">照査</th>
+        </tr>
+        <tr>
+          <th>PPバント（青）</th>
+          <td colspan="2">
+            <input type="text" class="form-input" value="縦２合で二の字" />
+          </td>
+          <td class="narrow-cell"><input type="text" class="form-input" /></td>
+          <td class="narrow-cell"><input type="text" class="form-input" /></td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th colspan="8">注意事項</th>
+        </tr>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th>コード</th>
+          <th>包装資材名</th>
+          <th></th>
+          <th>不良数</th>
+          <th>包材残数</th>
+        </tr>
+        <tr>
+          <td>１、賞味期限：</td>
+          <td>1年６ヶ月</td>
+          <td></td>
+          <td><input type="text" class="form-input" value="96-394" /></td>
+          <td><input type="text" class="form-input" value="段ボール" /></td>
+          <td>
+            <input
+              type="text"
+              class="form-input"
+              value="HOなめらかクリームコロッケ・カニ入"
+            />
+          </td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+        </tr>
+        <tr>
+          <td>２、外装印字：</td>
+          <td>例）24.11.10</td>
+          <td></td>
+          <td><input type="text" class="form-input" value="96-122" /></td>
+          <td><input type="text" class="form-input" value="フィルム" /></td>
+          <td><input type="text" class="form-input" value="KC-IY" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+        </tr>
+        <tr>
+          <td>３、内装印字：</td>
+          <td>例）24.11.10</td>
+          <td></td>
+          <td><input type="text" class="form-input" value="93-403" /></td>
+          <td><input type="text" class="form-input" value="シール" /></td>
+          <td><input type="text" class="form-input" value="HOなめらかCC" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+        </tr>
+        <tr>
+          <td>４、添付シールを入れる：</td>
+          <td>１袋(40枚/2シート)</td>
+          <td></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td>
+            <input type="text" class="form-input" value="内装一括表示シール" />
+          </td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th></th>
+          <th>時間</th>
+          <th>確認者</th>
+          <th></th>
+          <th>時間</th>
+          <th>確認者</th>
+          <th>クラフトテープ貼付け</th>
+          <th></th>
+        </tr>
+        <tr>
+          <th>段ボール</th>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <th>テープ(茶)</th>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>ケースNo.</th>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <th>PPバンド</th>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>添付品</th>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <th>束り方</th>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <div class="output-header">
+        <div>出来高</div>
+        <div>数量 時間 記入</div>
+      </div>
+      <table>
+        <tr>
+          <th></th>
+          <th>1P</th>
+          <th>2P</th>
+          <th>3P</th>
+          <th>4P</th>
+          <th>5P</th>
+          <th>6P</th>
+          <th>7P</th>
+          <th>8P</th>
+          <th>9P</th>
+          <th>10P</th>
+          <th>11P</th>
+          <th>12P</th>
+          <th>13P</th>
+          <th>14P</th>
+        </tr>
+        <tr>
+          <td>出来高</td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+        </tr>
+        <tr>
+          <th>記入</th>
+          <th>15P</th>
+          <th>16P</th>
+          <th>17P</th>
+          <th>18P</th>
+          <th>19P</th>
+          <th>20P</th>
+          <th>21P</th>
+          <th>22P</th>
+          <th>23P</th>
+          <th>24P</th>
+          <th>25P</th>
+          <th>26P</th>
+          <th>27P</th>
+          <th>28P</th>
+        </tr>
+        <tr>
+          <td>数量</td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+        </tr>
+        <tr>
+          <td>時間</td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+        </tr>
+        <tr>
+          <th></th>
+          <th>29P</th>
+          <th>30P</th>
+          <th>31P</th>
+          <th>32P</th>
+          <th>33P</th>
+          <th>34P</th>
+          <th>35P</th>
+          <th>36P</th>
+          <th>37P</th>
+          <th>38P</th>
+          <th>39P</th>
+          <th>40P</th>
+          <th>41P</th>
+          <th>42P</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+        </tr>
+      </table>
+
+      <table>
+        <tr>
+          <th>バッチ</th>
+          <th>1B</th>
+          <th>2B</th>
+          <th>3B</th>
+          <th>4B</th>
+          <th>5B</th>
+          <th>6B</th>
+          <th>7B</th>
+          <th>8B</th>
+          <th>9B</th>
+          <th>10B</th>
+          <th>11B</th>
+          <th>12B</th>
+          <th>13B</th>
+          <th>14B</th>
+        </tr>
+        <tr>
+          <td>ケースNo.</td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+        </tr>
+        <tr>
+          <td>時間</td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+          <td><input type="text" class="form-input" /></td>
+        </tr>
+      </table>
+
+      <div class="download-button">
+        <button id="downloadBtn">Download JSON</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
