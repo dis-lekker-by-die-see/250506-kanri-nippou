@@ -88,3 +88,8 @@ input[value]:not([value=""]) {
 .download-button button:hover {
   background-color: #45a049;
 }
+
+.download-button button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
