@@ -425,3 +425,14 @@
     </div>
 </body>
 </html>
+
+
+
+---
+
+
+
+<div class="output-header">
+        <div>出来高</div>
+        <div>数量 時間 記入</div>
+      </div>
