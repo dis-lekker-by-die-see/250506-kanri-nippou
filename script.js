@@ -917,9 +917,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const table2Inputs = document.querySelectorAll("table.weight-row input.form-input");
         tableData["table2"] = {
             設定重量: table2Inputs[0].value,
-            PPバント_青: table2Inputs[2].value,
-            承認: table2Inputs[3].value,
-            照査: table2Inputs[1].value,
+            PPバント_青: table2Inputs[1].value,
+            承認: table2Inputs[2].value,
+            照査: table2Inputs[3].value,
         };
         // Table 3: 注意事項 (20 inputs: 5 per row across 4 rows)
         const table3Inputs = document.querySelectorAll("table:nth-child(4) input.form-input");
